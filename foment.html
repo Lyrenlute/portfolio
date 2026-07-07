@@ -1,0 +1,100 @@
+<!--Author: Jani Finkbeiner, Last edit: 13/03/2025-->
+<!--Portfolio-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="author" content="Jani Finkbeiner">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">
+        
+        <!--optimizing search engines-->
+        <meta name="keywords" content="Jani Finkbeiner, Finkbeiner, portfolio, game, games, developer, designer, design, projects, xamk">
+        <meta name="description" content="Welcome to my portfolio. My name is Jani Finkbeiner, I'm a first year game developer student at the South-Eastern Finland University of Applied Sciences XAMK Kotka. This website says a bit about me and the projects I've been involved in so far.">
+        
+        <!--linking the CSS stylesheet-->
+        <link rel="stylesheet" href="CSS/styles.css">
+        <title>Jani Finkbeiner</title>
+    </head>
+    
+    <body>
+        <!--using DIV elements-->
+        <div id="PageWrapper">
+            <!--header including navigation toolbar-->
+            <div id="HeaderWrapper">
+                <!-- Navigation -->
+                <div id="NavWrapper">
+                    <button id="menuToggle" class="burger-menu">☰</button>
+                    <nav id="NavLinks">
+                        <a href="index.html" title="Profile">Profile</a>
+                        <a href="projects.html" title="My Projects">My Projects</a>
+                        <a href="foment.html" title="Foment">Foment</a>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </nav>
+                </div>
+            </div>
+            
+            <!--content-->
+            <h1 id="h1">Foment Entertainment</h1>
+            <div id="ContentWrapper">
+            
+                <!--Picture here-->
+                    <div id="PicWrapper">
+                        <img src="IMG/fomentLogo.png" alt="Logo of Foment Entertainment" style="width: 400px;">
+                    </div>
+            
+                <!-- Text here-->
+                <div id="TextWrapper">
+                    <h2>to instigate</h2>
+                    <p>
+                        Foment Entertainment Oy is a game studio founded by four students in Kotka in November 2023.
+                    </p>
+                    <p>
+                        Check out our website at
+                        <a href="https://fomentgames.com/" target="_blank">fomentgames.com</a>.
+                    </p>
+                    <p style="text-align: center;"><img src="projects/IMG/foment/pic2.png" alt="The founding members of Foment at the old campus." height="250px" width="400px"></p>
+                </div>
+                
+                <!-- Timeline-->
+                <div id="TextWrapper" style="text-align: center;">
+                    <h2>Timeline</h2>
+                    
+                    <h3>- Spring 2026 -</h3>
+                    <p><br>Thesis as part of my practical training<br><a href="https://urn.fi/URN:NBN:fi:amk-2026052919389" target="_blank">link to thesis</a></p>
+                    <p>|</p>
+                    
+                    <h3>- Spring 2025 -</h3>
+                    <p><img src="projects/IMG/foment/pic5.png" alt="Coin Flipper graphics" height="250px" width="400px"><br>Finished development of Coin Flipper mobile game</p>
+                    <p>|</p>
+                    
+                    <h3>- Summer 2024 -</h3>
+                    <p><img src="projects/IMG/foment/pic4.png" alt="Island extraction graphics" height="250px" width="400px"><br>Island Extraction in pre-production<br>(Shelved due to lack of grants)</p>
+                    <p>|</p>
+                    
+                    <h3>- Spring 2024 -</h3>
+                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/HI3GlMpq7E8?start=4527" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>*ship Start-up Festival Kotka<br>Pitch Captain Competition Semi-finalists</p>
+                    <p>|</p>
+                    
+                    <h3>- Autumn 2023 -</h3>
+                    <p><img src="projects/IMG/foment/pic3.png" alt="The founding members of Foment at the old campus." height="250px" width="400px"><br>Founded in Kotka</p>
+                </div>
+            </div>
+            
+            <!--footer with contact info and links-->
+            <div id="FooterWrapper">
+                <br><br>
+                <p id="Footer">ejafi001@edu.xamk.fi | <a href="https://www.linkedin.com/in/jani-finkbeiner-162ab524a/" target="_blank">LinkedIn</a> | <a href="https://itch.io/profile/lyrenlute " target="_blank">Itchio</a>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById("menuToggle").addEventListener("click", function () {
+                var nav = document.getElementById("NavLinks");
+                nav.style.display = (nav.style.display === "block") ? "none" : "block";
+            });
+        </script>  
+          
+    </body>
+</html>

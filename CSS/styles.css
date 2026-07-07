@@ -1,0 +1,197 @@
+/* Author: Jani Finkbeiner */
+/* Last Edit: 19/03/2025 */
+
+html
+{
+    background-image: linear-gradient(to bottom, #0F172A, #020617);
+    color: #38BDF8;
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body
+{
+    max-width:100%;
+    margin: auto;
+    padding: 5px;
+    overflow-x: hidden;
+}
+
+/*Navigation*/
+#NavWrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex-direction: column;
+    flex-wrap: wrap;   
+}
+
+#NavLinks
+{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color: #CDCDCD;
+}
+
+h1, h2
+{
+    text-align: center;
+}
+
+#Subtitle
+{
+    font-size: 20px;
+}
+
+#ContentWrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+#TextWrapper
+{
+    background-image: linear-gradient(to top, #1E293B, #0F172A);
+    padding: 40px;
+    width: 50%;
+    min-width: 300px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/*images*/
+img
+{
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
+
+#PicWrapper
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#PicWrapper img
+{
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+}
+
+/*Footer*/
+#FooterWrapper
+{
+    text-align: center;
+}
+
+/*links*/
+a:link, a:visited
+{
+  background-color: #801515;
+  color: #CDCDCD;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active
+{
+  background-color: #202020;
+} 
+
+/* Burger Menu Button */
+.burger-menu
+{
+    display: none; /* Hidden by default */
+}
+
+/*smaller 701-950px*/
+@media only screen and (min-width: 701px) and (max-width: 950px)
+{   
+    /*centering items one above the other*/
+    #ContentWrapper
+    {
+        align-items: center;
+    }
+    
+    #TextWrapper {
+        width: 80%;
+    }
+}
+
+
+/*smallest up to 700px*/
+@media only screen and (max-width: 700px)
+{
+    html
+    {
+        font-weight: bold;
+    }
+
+    .burger-menu
+    {
+        display: block;
+    }
+    
+    #NavLinks
+    {
+        display: none; /* Hide nav links initially */
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 100;
+        padding: 10px 0;
+    }
+    
+    #NavLinks a
+    {
+        display: block;
+        padding: 10px;
+    }
+
+    #NavLinks a:last-child
+    {
+        border-bottom: none;
+    }
+    
+    #NavWrapper
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #ContentWrapper
+    {
+        align-items: center;
+    }
+    
+    #TextWrapper
+    {
+        width: 75%;
+    }
+}
+

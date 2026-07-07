@@ -1,0 +1,85 @@
+<!--Author: Jani Finkbeiner, Last edit: 12/03/2025-->
+<!--Project5-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="author" content="Jani Finkbeiner">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">
+        <!--optimizing search engines-->
+        <meta name="keywords" content="Jani Finkbeiner, Finkbeiner, portfolio, game, games, developer, designer, design, projects, xamk">
+        <meta name="description" content="On this page you can find a summary of the projects I've been involved in.">
+        <!--linking the CSS stylesheet-->
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <title>Jani Finkbeiner</title>
+    </head>
+    
+    <body>
+        <!--using DIV elements-->
+        <div id="PageWrapper">
+            <!--content-->
+            <h2 id="h2">BotRacers</h2>
+            <div>
+                <a href="../projects.html" title="Back">Back...</a>
+            </div>
+            <br>
+            
+            <div id="ContentWrapper">
+                <!--Text-->
+                <div id="TextWrapper">
+                    <!--Team-->
+                    <div>
+                        <h2>Dev Team</h2>
+                        <p>Jani - Marketing, Creative Lead & Assets</p>
+                        <p>Tomi - Level Programmer</p>
+                        <p>Mikko - Project Lead & Producer</p>
+                    </div>
+                </div>
+                
+                <div id="TextWrapper">
+                        <p style="color: green;">Status: Finished /Autumn 2024</p>
+                        <p>Total work hours: 95</p>
+                        <p>Tools: Unreal Engine 5, Blender</p>
+                        <p>Scripting: UE node-scripting</p>
+                    </div>
+                        
+                <div id="TextWrapper">
+                    <h3>Project Description</h3>
+                        <p>This was yet another game design project from a course on cutting-edge technologies in the field of game development. My main responsibility was ensuring that the project's objectives, as outlined in the Game Design Document (GDD), were achieved. Additionally, I was responsible for sourcing and implementing assets and acted as the unofficial Marketing Manager. The technologies we decided to implement were 4K HD graphics, Spatial Audio and the use of an Arcade Stick controller.</p>
+                    <h3>Gameplay trailer</h3>
+                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/LLalJF6GVx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+                    <h3>Tasks</h3>
+                        <p>In my role as the Marketing Manager, I led the creation of the project's one-pager and produced a promotional video for the Gamelab Demoday. The video was designed to be somewhat self-ironic (given the project's incomplete state) while still showcasing the impressive environments and effects achievable with the technologies used in Unreal Engine.</p>
+                        <p>Most of my time was dedicated to sourcing and implementing assets for the project. Given the scale of the project, we deemed it inefficient to model assets from scratch. My task was to acquire as many suitable spacecraft models as possible. I searched for free, CC0-licensed assets with 4K textures that visually fit the project. My search spanned platforms such as Unity Asset Store, Artstation, Epic Games' Fab, and Sketchfab. I found approximately 15 spacecraft models, eight to twelve of which were compatible with the project.</p>
+                        <p>I created Player Pawn blueprints for these models in Unreal Engine. This required learning more about the Unreal Editor, as my prior experience with the engine was limited. We hid the project's original car mesh and wheels and replaced them with various spacecraft meshes.</p>
+                        <p>Additionally, I downloaded multiple free Megascans from Epic Games, along with maps and terrains that could be useful for level design. I also acquired various asset packs to enhance the visual design of the levels.</p>
+                        <p>I wanted to add impressive rocket thruster flame VFX effects to the spacecraft blueprints. Conveniently, Epic Games offered the "Rocket Thruster Exhaust FX" asset pack for free this fall. I downloaded it and added various effects to different spacecraft. Integrating the ships and effects required scaling meshes in Blender, as the scales of free assets didn’t always align with the environment or other models.</p>
+                        <p>My scripting contributions to the project were minimal. However, I did get to practice Unreal's visual node scripting a few times. In my test map, I created a blueprint that would randomly select a Player Pawn when a developer or player started the game in the editor.</p>
+                </div>
+                
+                <!--Pics-->
+                <div id="TextWrapper">
+                    <h2>Project Reel</h2>
+                    <div id="PicWrapper">
+                        <p><img src="IMG/racer/pic1.png" alt="Different racers in action in an ice map." height="250px" width="400px"><br>Different racers in action in an ice<br>map.</p>
+                        <p><img src="IMG/racer/pic3.png" alt="Racer1" height="250px" width="400px"><br>Racer1</p>
+                        <p><img src="IMG/racer/pic4.png" alt="Racer2" height="250px" width="400px"><br>Racer2</p>
+                        <p><img src="IMG/racer/pic5.png" alt="Racer3" height="250px" width="400px"><br>Racer3</p>
+                        <p><img src="IMG/racer/pic6.png" alt="Ice map" height="250px" width="400px"><br>Ice map</p>
+                        <p><img src="IMG/racer/pic7.png" alt="Tropical island map" height="250px" width="400px"><br>Tropical island map</p>
+                        <p><img src="IMG/racer/pic8.png" alt="Desert map" height="250px" width="400px"><br>Desert map</p>
+                        <p><img src="IMG/racer/pic9.png" alt="One pager with made up company logos and contacts." height="250px" width="400px"><br>One pager with made up company logos<br>and contacts.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--footer with contact info and links-->
+            <div id="FooterWrapper">
+                <br><br>
+                <p id="Footer">ejafi001@edu.xamk.fi | <a href="https://www.linkedin.com/in/jani-finkbeiner-162ab524a/" target="_blank">LinkedIn</a> | <a href="https://itch.io/profile/lyrenlute " target="_blank">Itchio</a></p>
+            </div>
+        </div>
+    </body>
+</html>

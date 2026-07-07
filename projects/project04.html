@@ -1,0 +1,84 @@
+<!--Author: Jani Finkbeiner, Last edit: 19/02/2025-->
+<!--Project4-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="author" content="Jani Finkbeiner">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">
+        
+        <!--optimizing search engines-->
+        <meta name="keywords" content="Jani Finkbeiner, Finkbeiner, portfolio, game, games, developer, designer, design, projects, xamk">
+        <meta name="description" content="On this page you can find a summary of the projects I've been involved in.">
+        
+        <!--linking the CSS stylesheet-->
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <title>Jani Finkbeiner</title>
+    </head>
+    <body>
+    
+        <!--using DIV elements-->
+        <div id="PageWrapper">
+        
+            <!--content-->
+            <h2>KMTK - Tournament Calculator</h2>
+            <div>
+                <a href="../projects.html" title="Back">Back...</a>
+            </div>
+            <br>
+            
+            <div id="ContentWrapper">
+                <div id="TextWrapper">
+                    <div>
+                        <p style="color: yellow;">Status: Shelved /Summer 2024</p>
+                        <p>Total work hours: 30</p>
+                        <p>Tools: Unity, Visual Studio</p>
+                        <p>Scripting: C#</p>
+                    </div>
+                </div>
+                
+                <!--Text-->
+                <div id="TextWrapper">
+                    <h3>Project Description</h3>
+                        <p>KMTK is an accronym which stands for "Keskimaan Turpakäräjät". This is the name of my Middle-Earth Strategy Battle Game (MESBG) <a href="https://keskimaanturpakarajat.wordpress.com/" target="_blank">blog on Wordpress</a>, and is a tribute to my miniature gaming group. In recent months, our gaming group has grown so much so that our tournament format had to be adjusted to accomodate for the rise in player numbers. Several options were visited and a clear favorite was selected when I mentioned that I could try coding a tournament calculator.</p>
+                        <p>The primary role of the tournament calculator would be to serve as a swiss-ranking calculator. In short, swiss-ranking is a way of pairing players in a tournament with less rounds than players. Traditionally, our tournament was a two day round-robin (everyone plays exactly once against everyone else). Now with more players, time constraints did not allow for a traditional round-robin, and so the swiss-ranking system was to be used and I was tasked with making a suitable calculator.</p>
+                        <p>Since my goal was to make a mobile application that could be put for sale, I wanted to make a GUI to cater for any player groups in the world that run into the same set of problems with growing demand for tournament player slots.</p>
+                        <p>I decided to ask my brother who is a colleague in the trade to come up with a logic for the problem and then I would implement it in a GUI using Unity. He got his C++ code to work in the console. Now all that was left for me to do was to implement it in Unity using C#.</p>
+                    <!-- <h3>Gameplay trailer</h3>
+                        <p><iframe width="560" height="315" src="https://youtu.be/rDU7C55TYa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p> -->
+                    <h3>Tasks</h3>
+                        <p>I wanted to make an app that would be easy to navigate and user-friendly. I selected some free assets from Unity's Asset store and began the tedious task of adding gameObjects, buttons, duplicating them and adding OnClick events to buttons, as well as enabling data entry such as player names. Once all tournament parameters have been entered, the tournament is ready to begin. At this point, it is necessary for the user to be able to enter scores from the games played in the tournament. The scores will be saved, and depending on the scores, the calculator should calculate the player pairings for the next round and each consecutive round without repeated pairings.</p>
+                    <h3>Functions</h3>
+                        <p>Most scripting for the GUI will be focusing on manipulation of UI game objects in Unity. So far there are a few place holder scripts (see images). I began scripting from the tournament view by giving functionality to the "Next Round" buttons. I also enabled the adding of player names to the tournament, but so far I have not saved that data anywhere. I presume that I will have to get acquinted with .json files before the end, if I want to save tournament data.</p>
+                    <h3>Solving Problems</h3>
+                        <p>So far the project has had little in terms of problems although I have become moderately concerned of my initial approach to the task at hand. Maybe if I started from scratch, I would focus more on implementing the logic first (or at least in part) before fully stocking up on the GUI. </p>
+                </div>
+                
+                <!--Pics-->
+                <div id="TextWrapper">
+                    <h2>Project Reel</h2>
+                    <div id="PicWrapper">
+                        <p><img src="IMG/calculator/pic1.png" alt="Main Menu" height="250px" width="400px"><br>Start Screen</p>
+                        <p><img src="IMG/calculator/pic2.png" alt="Enter player names screen" height="250px" width="400px"><br>Enter player names</p>
+                        <p><img src="IMG/calculator/pic3.png" alt="Select tournament mode screen" height="250px" width="400px"><br>Select tournament mode</p>
+                        <p><img src="IMG/calculator/pic4.png" alt="Adjust tournament parameters screen" height="250px" width="400px"><br>Adjust tournament parameters</p>
+                        <p><img src="IMG/calculator/pic5.png" alt="Tournament screen with rankings table and round info screen" height="250px" width="400px"><br>Tournament screen with rankings table<br>and round info</p>
+                        <p><img src="IMG/calculator/pic6.png" alt="Depiction of Unity project hierarchy" height="250px" width="400px"><br>Unity project hierarchy</p>
+                        <p><img src="IMG/calculator/pic7.png" alt="UIManager script in C#" height="250px" width="400px"><br>UIManager script</p>
+                        <p><img src="IMG/calculator/pic8.png" alt="Player script in C#" height="250px" width="400px"><br>Player script</p>
+                    </div>
+                </div>
+                   
+            </div>
+            
+            <!--footer with contact info and links-->
+            <div id="FooterWrapper">
+                <br><br>
+                <p id="Footer">ejafi001@edu.xamk.fi | <a href="https://www.linkedin.com/in/jani-finkbeiner-162ab524a/" target="_blank">LinkedIn</a> | <a href="https://itch.io/profile/lyrenlute " target="_blank">Itchio</a></p>
+            </div>
+            
+        </div>
+    </body>
+</html>

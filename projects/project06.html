@@ -1,0 +1,82 @@
+<!--Author: Jani Finkbeiner, Last edit: 12/03/2025-->
+<!--Project5-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="author" content="Jani Finkbeiner">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">
+        <!--optimizing search engines-->
+        <meta name="keywords" content="Jani Finkbeiner, Finkbeiner, portfolio, game, games, developer, designer, design, projects, xamk">
+        <meta name="description" content="On this page you can find a summary of the projects I've been involved in.">
+        <!--linking the CSS stylesheet-->
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <title>Jani Finkbeiner</title>
+    </head>
+    
+    <body>
+        <!--using DIV elements-->
+        <div id="PageWrapper">
+            <!--content-->
+            <h2 id="h2">Zombie Extraction</h2>
+            <div>
+                <a href="../projects.html" title="Back">Back...</a>
+            </div>
+            <br>
+            
+            <div id="ContentWrapper">
+                <!--Text-->
+                <div id="TextWrapper">
+                        <p style="color: cyan;">Status: Ongoing</p>
+                        <p>Total work hours: 60</p>
+                        <p>Tools: Unity, Visual Studio</p>
+                        <p>Scripting: C#</p>
+                    </div>
+                        
+                <div id="TextWrapper">
+                    <h3>Project Description</h3>
+                        <p>This adventure-survival escape game is a project that I made as part of my Level Design course at the end of my second year of studies. It is an ongoing project that I intend to publish at some point (yeah, we've all heard that before). For this project I used recently acquired skills and free assets to make a cohesive playable level that should take no more than 5 minutes to play through.</p>
+                    <h3>Gameplay trailer</h3>
+                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/s0yRVl_T8Sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+                    <h3>Tasks</h3>
+                        <p>For this project I learned to use the new player input system for Unity. This turned out to be a very nice and easy way to implement basic movement and add interaction with the surroundings. I chose to use the surroundings as the only source for the player to defend themselves in this frantic survival. It felt right given the theme. Players must find small rocks to pick up and throw at enemies. This was achieved using interactable Tags for the rocks and allowing the player input system to access any objects with this tag.</p>
+                        <p>The enemy had to be programmed with some kind of basic movement AI. A navmesh was baked onto the terrain for the enemy to move on. The enemy script was made so that enemies move around randomly on the navmesh until they are within range of the player at which point they will approach the player to attack. Enemy animations were made using free animations from Mixamo.com and put together in the Unity animator using a blend tree.</p>
+                        <p>The level itself was built in the Unity editor using a few different free assets from the Unity Asset store as well as the default assets in the Unity terrain builder tool (trees, grass, etc.) The walls and sliding doors were Unity 3D-objects that were initially used as placeholders but ended up staying as they added to the facility feel that the level is supposed to convey and matched well with low-poly look of the game. Post-processing effects such as fog were added to create an environment in which far-off objects are obscured.</p>
+                        <p>The idea of the game is for the player to navigate out of the level and find the extraction point (a helicopter) waiting for the player at the end of the level. Th player must reach this target within 5 minutes, or the player loses. If the player takes too much damage they also lose. The player is 'equipped with a flashlight', i.e. there is a spot light with a short range and tight radius pointing in the direction that the player is looking.</p>
+                        <p>A few basic UI layers were added both in-game (health bar, timer, tutorial texts) as well as for different menus (Start Game, Game Over, Win screen, Pause Menu). Each menu screen was paused the game (since it is a single player game) and was equipped with a Continue-button where applicable and a Restart Level-button.</p>
+                        <p>An audiomanager was used to control the soundworld in the game. A custom-made progressive background soundtrack plays for the full 5 minutes starting as an ambient note that can just be heard above the environment sounds and escalates to a rhythmic drumbeat towards the end inducing a sense of urgency in the player as time runs out.</p>
+                    <h3>Functions</h3>
+                        <p>A few of the smaller scripts are displayed at the bottom of the page under Pictures. In addition to the SlidingDoor, Extraction (win screen), PlayerHealth and Helicopter scripts there are scripts such as the EnemyController, PlayerController and GameController as well as more stubs such as the HelicopterRotor script amongst others.</p>
+                    <h3>Problems & Testing</h3>
+                        <p>There are still many ideas to be implemented. As one example, the rocks could be shiny green both to make them easier to spot and would make sense that they're radioactive or something, which kills the enemies (instead of enemies just dying when hit by a regular rock). The game has been on exhibition at the faculty's biannual DemoDay and has been play-tested on a separate course with useful feedback gathered and waiting to be processed.</p>
+                </div>
+                
+                <!--Pics-->
+                <div id="TextWrapper">
+                    <h2>Project Reel</h2>
+                    <div id="PicWrapper">
+                        <p><img src="IMG/zombie/pic1.png" alt="Start Game screen with game logo and Start Game button." height="250px" width="400px"><br>Start Game screen with game logo and<br>Start Game button.</p>
+                        <p><img src="IMG/zombie/pic2.png" alt="In-game tutorial text, timer and health bar." height="250px" width="400px"><br>In-game tutorial text, timer and<br>health bar.</p>
+                        <p><img src="IMG/zombie/pic3.png" alt="First-person view of the flashlight and one enemy that is approaching the player." height="250px" width="400px"><br>First-person view of the flashlight<br>and one enemy that is approaching the<br>player.</p>
+                        <p><img src="IMG/zombie/pic4.png" alt="The pause screen showing player controls and objectives." height="250px" width="400px"><br>The pause screen showing player<br>controls and objectives.</p>
+                        <p><img src="IMG/zombie/pic5.png" alt="Game Over screen shown after the health bar empties or time runs out." height="250px" width="400px"><br>Game Over screen shown after the<br>health bar empties or time runs out.</p>
+                        <p><img src="IMG/zombie/pic6.png" alt="Win screen shown once the player successfully reaches the helicopter." height="250px" width="400px"><br>Win screen shown once the player<br>successfully reaches the helicopter.</p>
+                        <p><img src="IMG/zombie/pic7.png" alt="The Extraction script controlling the Win Screen." height="250px" width="400px"><br>The Extraction script controlling the<br>Win Screen.</p>
+                        <p><img src="IMG/zombie/pic8.png" alt="One of the helicopter scripts used to make the helicopter 'bob' as it's floating in the air." height="250px" width="400px"><br>One of the helicopter scripts used to<br>make the helicopter 'bob' as it's<br>floating in the air.</p>
+                        <p><img src="IMG/zombie/pic9.png" alt="The slide door script that activates the automatic sliding doors whenever the player gets close." height="250px" width="400px"><br>The slide door script that activates<br>the automatic sliding doors whenever<br>the player gets close.</p>
+                        <p><img src="IMG/zombie/pic10.png" alt="Player Health script with functions to bring up the Game Over screen once health runs out." height="250px" width="400px"><br>Player Health script with functions<br>to bring up the Game Over screen<br>once health runs out.</p>
+                        <p><img src="IMG/zombie/pic11.png" alt="The player input manager in Unity." height="250px" width="400px"><br>The player input manager in Unity.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--footer with contact info and links-->
+            <div id="FooterWrapper">
+                <br><br>
+                <p id="Footer">ejafi001@edu.xamk.fi | <a href="https://www.linkedin.com/in/jani-finkbeiner-162ab524a/" target="_blank">LinkedIn</a> | <a href="https://itch.io/profile/lyrenlute " target="_blank">Itchio</a></p>
+            </div>
+        </div>
+    </body>
+</html>

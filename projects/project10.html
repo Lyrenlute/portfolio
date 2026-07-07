@@ -1,0 +1,68 @@
+<!--Author: Jani Finkbeiner, Last edit: 24/03/2025-->
+<!--Project5-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="author" content="Jani Finkbeiner">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">
+        <!--optimizing search engines-->
+        <meta name="keywords" content="Jani Finkbeiner, Finkbeiner, portfolio, game, games, developer, designer, design, projects, xamk">
+        <meta name="description" content="On this page you can find a summary of the projects I've been involved in.">
+        <!--linking the CSS stylesheet-->
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <title>Jani Finkbeiner</title>
+    </head>
+    
+    <body>
+        <!--using DIV elements-->
+        <div id="PageWrapper">
+            <!--content-->
+            <h2 id="h2">World Cup 2026 Prediction Game</h2>
+            <div>
+                <a href="../projects.html" title="Back">Back...</a>
+            </div>
+            <br>
+            
+            <div id="ContentWrapper">
+                <!--Text-->                
+                <div id="TextWrapper">
+                        <p style="color: cyan;">Status: Ongoing</p>
+                        <p>Total work hours: 60</p>
+                        <p>Tools: VS Code</p>
+                        <p>Scripting: hmtl, css, js</p>
+                        <p>AI: ChatGPT, Codex</p>
+                    </div>
+                        
+                <div id="TextWrapper">
+                    <h3>Project Description</h3>
+                        <p>With the 2026 FIFA World Cup around the corner, I decided to join forces with another football fanatic in this collaboration project. Our goal is to make a website that can be used as a pseudo-betting platform for friends to bet on upcoming games. Players receive points for correct results.</p>
+                    <h3>Tasks</h3>
+                        <p>My tasks for this project were focused on the frontend of the website as well as the rules design, while my collaborator worked on the database, API and consolidating the frontend with the backend.</p>
+                        <p>The frontend consists of a simple mobile-first, minimalist user interface starting with sign in/sign up forms. After choosing a unique username and entering a password, users are directed to the front page, the leaderboard. From there a user can view their rank amongst friends and navigate to the other pages, namely matches and rules. Rules simply displays what point system is used in the betting, while matches is where the actual game results are predicted. Matches shows country names with corresponding flags and an entry field for number of goals scored in that match. Predictions can be altered up to kick-off and points are awarded based on the rules, after the match has ended. The matches and results are drawn directly from the database.</p>
+                        <p>The rules follow a typical points system used in similar prediction games with 5 points awarded for the exact score, 3 points for the correct result (correct winner/draw) and zero points for the wrong result. The rules are intentionally very simple so as to easily be understood. The knockout round provides an additional +2 points for correctly predicting the team to advance. This solves the issue of giving points for draws, that get decided on penalties.</p>
+                        <p>The navigation can be accessed by the hamburger menu at the top left of the screen. Other features include a refresh button in matches and leaderboard, as well as an options cog at the top right with theme (light/dark mode), language selection (not working yet, but will include English, Spanish, German) and a log out button.</p>
+                </div>
+                
+                <!--Pics-->
+                <div id="TextWrapper">
+                    <h2>Pictures</h2>
+                    <div id="PicWrapper">
+                        <p><img src="IMG/wcbets/pic1.png" height="250px" width="400px"><br>Sign in page</p>
+                        <p><img src="IMG/wcbets/pic2.png" height="250px" width="400px"><br>Leaderboard</p>
+                        <p><img src="IMG/wcbets/pic3.png" height="250px" width="400px"><br>Matches</p>
+                        <p><img src="IMG/wcbets/pic4.png" height="250px" width="400px"><br>Rules</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--footer with contact info and links-->
+            <div id="FooterWrapper">
+                <br><br>
+                <p id="Footer">ejafi001@edu.xamk.fi | <a href="https://www.linkedin.com/in/jani-finkbeiner" target="_blank">LinkedIn</a> | <a href="https://itch.io/profile/lyrenlute " target="_blank">Itchio</a></p>
+            </div>
+        </div>
+    </body>
+</html>

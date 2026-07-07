@@ -1,0 +1,125 @@
+<!--Author: Jani Finkbeiner, Last edit: 17/02/2025-->
+<!--Portfolio-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="author" content="Jani Finkbeiner">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">
+        
+        <!--optimizing search engines-->
+        <meta name="keywords" content="Jani Finkbeiner, Finkbeiner, portfolio, game, games, developer, designer, design, projects, xamk">
+        <meta name="description" content="Welcome to my portfolio. My name is Jani Finkbeiner, I'm a first year game developer student at the South-Eastern Finland University of Applied Sciences XAMK Kotka. This website says a bit about me and the projects I've been involved in so far.">
+        
+        <!--linking the CSS stylesheet-->
+        <link rel="stylesheet" href="CSS/styles.css">
+        <title>Jani Finkbeiner</title>
+    </head>
+    <body>
+    
+        <!--using DIV elements-->
+        <div id="PageWrapper">
+        
+            <!--header including navigation toolbar-->
+            <div id="HeaderWrapper">
+            
+                <!-- Navigation -->
+                <div id="NavWrapper">
+                    <button id="menuToggle" class="burger-menu">☰</button>
+                    <nav id="NavLinks">
+                        <a href="index.html" title="Profile">Profile</a>
+                        <a href="projects.html" title="My Projects">My Projects</a>
+                        <a href="foment.html" title="Foment">Foment</a>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </nav>
+                </div>
+            </div>
+            
+            <!--header-->
+            <h1>Jani Finkbeiner</h1>
+            
+            <!--Picture here-->
+                <div id="PicWrapper">
+                    <img src="IMG/profilePic.png" alt="a picture of me" style="width: 400px; height: 400px;">
+                </div>
+                
+                <!--Subtitle-->
+                <h2 id="Subtitle">HUSBAND, DAD<br>GAME DEVELOPER</h2>
+            
+            <div id="ContentWrapper">
+            
+                <!--Content-->
+                <div id="TextWrapper">
+                    <h2>About me</h2>
+                    <p>
+                        Hiya! I'm Jani, a gamer, game developer, creative director, and co-founder of <a href="foment.html" title="More">Foment Entertainment</a>.
+                    </p>
+                    
+                    <!--Dev Skills-->
+                    <h4>Dev Skills</h4>
+                    <ul>
+                        <li>code - C++, C#, xaml, sql</li>
+                        <li>web - HTML, CSS, js</li>
+                        <li>tools - Visual Studio, .NET MAUI</li>
+                        <li>game engines - Unity, UE5</li>
+                        <li>2d - Gimp, Photoshop, Quixel Mixer</li>
+                        <li>3d - 3ds Max, Blender</li>
+                        <li>misc - AutoCAD, Canva, Figma, Github, Wordpress</li>
+                    </ul>
+                    
+                    <!--Education-->
+                    <h4>Education</h4>
+                    <ul>
+                        <li>2026 - BEng (ICT), Game Technology, South-Eastern Finland University of Applied Sciences (XAMK)</li>
+                        <li>2021 - Teaching Assistant, Jyväskylän Kristillinen Opisto</li>
+                        <li>2017 - Construction & Bricklaying, Jyväskylän Ammattiopisto</li>
+                    </ul>
+                    
+                    <!--Work Experience-->
+                    <h4>Work Experience</h4>
+                    <ul>
+                        <li>2019-2021 - Teaching Assistant, City of Jyväskylä</li>
+                        <li>2019-2020 - Entrepreneur, Construction services, TMI Jani Finkbeiner</li>
+                        <li>2017-2019 - Construction Worker, Jyväs-Rakenne Oy</li>
+                    </ul>
+                    
+                    <!--Leadership-->
+                    <h4>Leadership</h4>
+                    <ul>
+                        <li>2023-2026 - Creative Director and Co-founder, Foment Entertainment Oy</li>
+                        <li>2020-2022 - Founder and Club President, Urheiluseura Internazionale ry</li>
+                    </ul>
+                    
+                    <!--Languages-->
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>native - Finnish, German</li>
+                        <li>fully proficient - English</li>
+                        <li>hobby - Hebrew, Latin, Sindarin</li>
+                    </ul>
+                    
+                    <!--Download CV pdf-->
+                    <br>
+                    <a href="PDF/CV_Finkbeiner_Jani.pdf" download="CV_Finkbeiner_Jani.pdf">Download CV</a>
+
+                </div>
+            </div>
+            
+            <!--footer with contact info and links-->
+            <div id="FooterWrapper">
+                <br>
+                <p id="Footer">ejafi001@edu.xamk.fi | <a href="https://www.linkedin.com/in/jani-finkbeiner-162ab524a/" target="_blank">LinkedIn</a> | <a href="https://itch.io/profile/lyrenlute " target="_blank">Itchio</a>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById("menuToggle").addEventListener("click", function () {
+                var nav = document.getElementById("NavLinks");
+                nav.style.display = (nav.style.display === "block") ? "none" : "block";
+            });
+        </script>  
+          
+    </body>
+</html>

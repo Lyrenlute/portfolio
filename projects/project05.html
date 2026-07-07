@@ -1,0 +1,73 @@
+<!--Author: Jani Finkbeiner, Last edit: 11/03/2025-->
+<!--Project5-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="author" content="Jani Finkbeiner">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">
+        <!--optimizing search engines-->
+        <meta name="keywords" content="Jani Finkbeiner, Finkbeiner, portfolio, game, games, developer, designer, design, projects, xamk">
+        <meta name="description" content="On this page you can find a summary of the projects I've been involved in.">
+        <!--linking the CSS stylesheet-->
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <title>Jani Finkbeiner</title>
+    </head>
+    
+    <body>
+        <!--using DIV elements-->
+        <div id="PageWrapper">
+            <!--content-->
+            <h2 id="h2">Oromë the Hunter</h2>
+            <div>
+                <a href="../projects.html" title="Back">Back...</a>
+            </div>
+            <br>
+            
+            <div id="ContentWrapper">
+                <!--Text-->
+                <div id="TextWrapper">
+                        <p style="color: green;">Status: Finished /Autumn 2023</p>
+                        <p>Total work hours: 65</p>
+                        <p>Tools: Unity, Visual Studio</p>
+                        <p>Scripting: C#</p>
+                        <p>AI: Narakeet</p>
+                    </div>
+                        
+                <div id="TextWrapper">
+                    <h3>Project Description</h3>
+                        <p>This was simply a frontend level design project that I made by myself in my second year of studies. All assets were free and used under CC0 license from the Unity Asset Store. The purpose of the course was to get better acquainted with the Unity game engine editor. New skills acquired during this course were anything related to frontend including the terrain tool, various lights, animators, animations, particle effects, sounds, virtual cameras and much more. I also did a tiny bit of scripting.</p>
+                    <h3>Gameplay trailer</h3>
+                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/TyZbMJHnj8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+                    <h3>Tasks</h3>
+                        <p>Terrain was made using the Unity terrain painter tool. Terrain included different types of trees with and without leaves, grass and rocks. All of these were later affected using the environmental wind tool.</p>
+                        <p>Different lights were added including baked area lights as well as point lights for the two trees and spot lights for different effects such as the flickering camp fires (the flicker was scripted. Several post processing layers were also added to produce an unnatural glow in the clouds. The skybox was scripted to rotate to make it seem as though the clouds were moving. Other effects such as a tweaked white balance and depth of field were made to make the visuals warmer and blur out distant objects.</p>
+                        <p>The Unity Animator was used to create walking and running animations. The animations were imported from Mixamo.com and implemented using a blend tree. I also practiced making particle effects from scratch including fires, smoke and giving fire arrows a smoke trail.</p>
+                        <p>Environmental sounds were implemented using an AudioManager. All sounds were free and used under CC0 license from FreeSound.org. A SoundManager was created to control the ambient sounds including birds chirping, walking sounds, the bow flexing and the arrow being released, creature sounds (bunny, deer, bear),  The exception was the narration by the "Noldorin warrior" standing guard in front of the glowing trees. The narration was done using Narakeet.com</p>
+                        <p>Three different virtual cameras were used to immerse the player depending on the state of the player character. The default camera was a third-person view from a medium distance behind the character for regular movement and idling. The second was for sprinting, in which camera shake was added and the distance of the camera from the character was increased so as to show a wider area around the player. Lastly an aiming camera was implemented to zoom in close to the player and look over the character's shoulder as they flex the bow.</p>
+                </div>
+                
+                <!--Pics-->
+                <div id="TextWrapper">
+                    <h2>Project Reel</h2>
+                    <div id="PicWrapper">
+                        <p><img src="IMG/orome/pic1.png" alt="The player character and the iconic two trees of Valinor illuminating elvenhome" height="250px" width="400px"><br>The player character and the iconic<br>two trees of Valinor illuminating<br>elvenhome.</p>
+                        <p><img src="IMG/orome/pic2.png" alt="A Noldorin warrior narrating the history of the two trees with an AI generated voice by Narakeet." height="250px" width="400px"><br>A Noldorin warrior narrating the<br>history of the two trees with an AI<br>generated voice by Narakeet.</p>
+                        <p><img src="IMG/orome/pic3.png" alt="The player character in the 'aiming' vcam approaching a bear." height="250px" width="400px"><br>The player character in the 'aiming'<br>vcam approaching a bear.</p>
+                        <p><img src="IMG/orome/pic4.png" alt="A campfire, trees and clouds." height="250px" width="400px"><br>A campfire, trees and clouds.</p>
+                        <p><img src="IMG/orome/pic5.png" alt="The stub of a script used to rotate the skybox." height="250px" width="400px"><br>The stub of a script used to rotate<br>the skybox.</p>
+                        <p><img src="IMG/orome/pic6.png" alt="The script used to vary the flicker of the campfires." height="250px" width="400px"><br>The script used to vary the flicker<br>of the campfires.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--footer with contact info and links-->
+            <div id="FooterWrapper">
+                <br><br>
+                <p id="Footer">ejafi001@edu.xamk.fi | <a href="https://www.linkedin.com/in/jani-finkbeiner-162ab524a/" target="_blank">LinkedIn</a> | <a href="https://itch.io/profile/lyrenlute " target="_blank">Itchio</a></p>
+            </div>
+        </div>
+    </body>
+</html>
